@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+#plugin-contact-ring {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	opacity: .8;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	z-index: 100
+}
+#plugin-contact-ring.open {
+	opacity: 1
+}
+#ring-list .item, #ring-toggle-button {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.8);
+	left: 0;
+	bottom: 0
+}
+#ring-toggle-button {
+	z-index: 10
+}
+#ring-toggle-button:after, #ring-toggle-button:before {
+	content: ' ';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: #fff;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 2px;
+	-webkit-transition: -webkit-transform .8s cubic-bezier(.18, .89, .32, 1.28), opacity .2s linear;
+	transition: transform .8s cubic-bezier(.18, .89, .32, 1.28), opacity .2s linear
+}
+#ring-toggle-button:before {
+	width: 50%;
+	height: 4px
+}
+#ring-toggle-button:after {
+	height: 50%;
+	width: 4px
+}
+#plugin-contact-ring.open #ring-toggle-button:after, #plugin-contact-ring.open #ring-toggle-button:before {
+	-webkit-transform: translate(-50%, -50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg)
+}
+#ring-list {
+	position: relative
+}
+#plugin-contact-ring.open #ring-list.r3 {
+	width: 150px;
+	height: 150px;
+}
+#plugin-contact-ring.open #ring-list.r4 {
+	width: 175px;
+	height: 175px
+}
+#plugin-contact-ring.open #ring-list.r5 {
+	width: 200px;
+	height: 200px
+}
+#ring-list .item {
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform .6s cubic-bezier(.18, .89, .32, 1.28), opacity .2s linear;
+	transition: transform .6s cubic-bezier(.18, .89, .32, 1.28), opacity .2s linear;
+	opacity: 0
+}
+#plugin-contact-ring.open #ring-list .item, #plugin-contact-ring2 #ring-list li {
+	opacity: 1
+}
+#ring-list .item:nth-child(1) {
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s
+}
+#ring-list .item:nth-child(2) {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s
+}
+#ring-list .item:nth-child(3) {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s
+}
+#ring-list .item:nth-child(4) {
+	-webkit-transition-delay: .4s;
+	transition-delay: .4s
+}
+#ring-list .item:nth-child(5) {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s
+}
+#ring-list.r3 .item:nth-child(n+4), #ring-list.r4 .item:nth-child(n+5), #ring-list.r5 .item:nth-child(n+6) {
+	display: none
+}
+#plugin-contact-ring.open #ring-list.r3 .item:nth-child(1) {
+	-webkit-transform: translate(0, -100px);
+	transform: translate(0, -100px)
+}
+#plugin-contact-ring.open #ring-list.r3 .item:nth-child(2) {
+	-webkit-transform: translate(70.71px, -70.71px);
+	transform: translate(70.71px, -70.71px)
+}
+#plugin-contact-ring.open #ring-list.r3 .item:nth-child(3) {
+	-webkit-transform: translate(100px, 0);
+	transform: translate(100px, 0)
+}
+#plugin-contact-ring.open #ring-list.r4 .item:nth-child(1) {
+	-webkit-transform: translate(0, -125px);
+	transform: translate(0, -125px)
+}
+#plugin-contact-ring.open #ring-list.r4 .item:nth-child(2) {
+	-webkit-transform: translate(62.5px, -108.25px);
+	transform: translate(62.5px, -108.25px)
+}
+#plugin-contact-ring.open #ring-list.r4 .item:nth-child(3) {
+	-webkit-transform: translate(108.25px, -62.5px);
+	transform: translate(108.25px, -62.5px)
+}
+#plugin-contact-ring.open #ring-list.r4 .item:nth-child(4) {
+	-webkit-transform: translate(125px, 0);
+	transform: translate(125px, 0)
+}
+#plugin-contact-ring.open #ring-list.r5 .item:nth-child(1) {
+	-webkit-transform: translate(0, -150px);
+	transform: translate(0, -150px)
+}
+#plugin-contact-ring.open #ring-list.r5 .item:nth-child(2) {
+	-webkit-transform: translate(57.4px, -138.58px);
+	transform: translate(57.4px, -138.58px)
+}
+#plugin-contact-ring.open #ring-list.r5 .item:nth-child(3) {
+	-webkit-transform: translate(106.07px, -106.07px);
+	transform: translate(106.07px, -106.07px)
+}
+#plugin-contact-ring.open #ring-list.r5 .item:nth-child(4) {
+	-webkit-transform: translate(138.58px, -57.4px);
+	transform: translate(138.58px, -57.4px)
+}
+#plugin-contact-ring.open #ring-list.r5 .item:nth-child(5) {
+	-webkit-transform: translate(150px, 0);
+	transform: translate(150px, 0)
+}
+#ring-list .item .icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 6px auto 2px;
+	background: url(marketing.png) no-repeat;
+	-webkit-background-size: auto 25px;
+	background-size: auto 25px
+}
+#ring-list .item-phone .icon {
+	background-position: 0 0
+}
+#ring-list .item-flush .icon {
+	background-position: -149px 0
+}
+#ring-list .item-sms .icon {
+	background-position: -25px 0
+}
+#ring-list .item-map .icon {
+	background-position: -50px 0
+}
+#ring-list .item-weibo .icon {
+	background-position: -75px 0
+}
+#ring-list .item-weixin .icon {
+	background-position: -100px 0
+}
+#ring-list .item-qq .icon {
+	background-position: -125px 0
+}
+#ring-list .item span {
+	display: block;
+	font-size: 70%;
+	color: #fff;
+	width: 2.5em;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto;
+	line-height: 1;
+	margin-top: 0
+}
+@font-face {
+	font-family: icon;
+	src: url(./font/icon.eot);
+	src: url(./font/icon.eot?#iefix) format('embedded-opentype'), url(./font/icon.woff2) format('woff2'), url(./font/icon.woff) format('woff'), url(./font/icon.ttf) format('truetype'), url(./font/icon.svg#icon) format('svg');
+	font-weight: 400;
+	font-style: normal
+}
+#plugin-contact-ring2 #ring-toggle-button {
+	width: 54px;
+	height: 54px;
+	background: #fff;
+	background: -webkit-linear-gradient(top, #fff, #D9D9D9 100%);
+	border-radius: 27px;
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	box-shadow: 0 0 1px 3px rgba(0,0,0,.4);
+	box-sizing: border-box;
+	color: #515151
+}
+#plugin-contact-ring2 #ring-toggle-button:after {
+	display: block;
+	font-family: icon;
+	content: "A";
+	position: absolute;
+	z-index: 1;
+	font-size: 50px;
+	line-height: 4px;
+	text-indent: -18px;
+	background: 0 0;
+	top: 30px;
+	-ms-transform: translate(-2px, 0px);
+}
+#plugin-contact-ring2 #ring-toggle-button:before {
+	display: block;
+	content: '茅娄鈥撁┞÷�';
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	line-height: 34px;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
+font-size:.8rem
+}
+#plugin-contact-ring2 {
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background: #515151;
+	left: 0
+}
+#plugin-contact-ring2 li {
+	display: block
+}
+#plugin-contact-ring2 #ring-list {
+	position: initial
+}
+#plugin-contact-ring2 #ring-list li:active {
+	background: rgba(0,0,0,.3);
+	border-radius: initial
+}
+#plugin-contact-ring2 #ring-toggle-button:after, #plugin-contact-ring2 #ring-toggle-button:before {
+	background: 0 0
+}
+#plugin-contact-ring2 #ring-list .item {
+	width: 20.7%;
+	background: 0 0;
+	display: block;
+	float: left;
+	position: static;
+	position: initial;
+}
+#plugin-contact-ring2 #ring-list .item a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0
+}
+#plugin-contact-ring2 #ring-list .item:nth-of-type(3) {
+	margin-left: 17.2%
+}
+#plugin-contact-ring2 #ring-list .item:nth-of-type(5) {
+	display: none
+}
+#plugin-contact-ring2, #plugin-contact-ring2 #ring-toggle-button {
+	color: #515151;
+	z-index: 3
+}

@@ -1,0 +1,112 @@
+/* ---------------------------------------------------------- */
+/*                                                            */
+/* PAD                                                        */
+/*                                                            */
+/*                                                            */
+/* ---------------------------------------------------------- */
+
+.index_ {
+    padding: 2em 0 2em;
+}
+
+/*
+* header
+*/
+
+/* 瀵艰埅 */
+
+/* LOGO */
+.logo,.slogan{height: 90px}
+.head_tel{height: auto;padding: 5px 0 15px 0;text-align: center;}
+.head_tel a{display: inline;padding-left: 10px}
+
+/*
+ * banner 
+ */
+.slide{height: 300px;overflow: hidden;}
+.slide ul img.abs{width: 1000px;height: 300px;margin-left: -500px;margin-top: -150px}
+
+/*
+ * footer
+ */
+
+
+
+/*
+ * nbanner
+ */
+
+
+
+/*
+ * block
+ */
+.index_ .T h2{font-size: 20px}
+.index_ .T h4{font-size: 12px}
+
+/* ==========================================================================
+   Common module
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Index Page
+   ========================================================================== */
+
+/* 涓ゅ垪鍙充晶鑷€傚簲甯冨眬 */
+.g-bd1{margin:0 0 10px;}
+.g-sd1{position:relative;float:left;width: 100%;margin-right:0;}
+.g-mn1{float:right;width:100%;}
+.g-mn1c{margin-left:0;}
+
+/*
+ * 浜у搧
+ */
+.prod-slide .cate-box h3{font-size: 24px;background-repeat: repeat-x;position: relative;line-height: 55px}
+.prod-slide .cate-box h3:after{position: absolute;display: block;font-family: 'iconfont';content: '\e60e';right: 10px;top: 0;font-weight: normal;}
+.prod-slide .cate-box ul{display: none;}
+.prod-slide .tel-box{display: none;}
+
+/*
+ * 鍏叡妯箙
+ */
+.section_public div{text-align: center;}
+
+/*
+ * 鎼滅储 
+ */
+.widget-search-form{width: 95%;}
+
+/*
+ * 鎴戜滑浼樺娍
+ */
+.section_advtage .services-box{padding:10px 0}
+.section_advtage .services-box h3 p{font-size:24px;line-height: 1.4;}
+
+/*
+ * 鍏充簬鎴戜滑 
+ */
+.section_about{padding-bottom: 20px}
+
+
+/* ==========================================================================
+   Inner Page
+   ========================================================================== */
+
+.box-title strong {
+    font-size: 20px;
+    color: #4b4b4b;
+    position: relative;
+    padding: 10px 10px;
+    float: left;
+}
+.box-cont{
+  padding: 15px 0
+}
+.box .PageCrumbList {
+    padding: 20px 10px 0 0;
+}
+
+#map{height: 350px!important}
+

@@ -1,0 +1,6 @@
+/.idea
+.env
+composer.lock
+/storage/
+.editorconfig
+/public/file/
