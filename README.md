@@ -68,12 +68,11 @@ function Keywords()
 }
 ?>
 
-```
+
 用法示例
-```xhtml
+
 <head>
     <title>{{Title()}}</title>
     <meta name="Keywords" content="{{Keywords()}}">
     <meta name="Description" content="{{Description()}}">
 </head>
-```
