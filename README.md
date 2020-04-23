@@ -1,15 +1,25 @@
 目录结构
-.
+
 ├── app                                 App文件目录
+
 ├── config                              配置文件目录
+
 ├── database                              数据库存放目录
+
 ├── public                              公共文件目录
+
 ├── resources                           视图文件目录
+
 ├── routes                              路由文件目录
+
 ├── storage                             日志文件目录
+
 ├── vendor                              日志扩展文件目录
+
 ├── composer.json                    composer文件
+
 ├── LICENSE                          MIT License
+
 └── README.md                        说明文件
 
 基类
