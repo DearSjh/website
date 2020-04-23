@@ -13,7 +13,7 @@
 └── README.md                        说明文件
 
 基类
-
+```PHP
 <?php
 
 use Illuminate\Support\Facades\Cookie;
@@ -68,11 +68,12 @@ function Keywords()
 }
 ?>
 
-
+```
 用法示例
-
+```xhtml
 <head>
     <title>{{Title()}}</title>
     <meta name="Keywords" content="{{Keywords()}}">
     <meta name="Description" content="{{Description()}}">
 </head>
+```
